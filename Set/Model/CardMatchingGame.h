@@ -6,16 +6,14 @@
 //  Copyright (c) 2013 Yuhua Mai. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "MatchingGame.h"
 #import "Deck.h"
 
-@interface CardMatchingGame : NSObject
+@interface CardMatchingGame : MatchingGame
 
-- (id)initWithCardCount:(NSUInteger)cardCount usingDeck:(Deck *)deck;
+
 
 - (void)flipCardAtIndex:(NSUInteger)index chooseMode:(NSUInteger)mode;
-
-- (Card *)cardAtIndex:(NSUInteger)index;
 
 - (NSString*)updateResultOfLastFlip;
 

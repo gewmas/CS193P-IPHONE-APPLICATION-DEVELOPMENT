@@ -9,7 +9,7 @@
 #import "CardMatchingGame.h"
 
 @interface CardMatchingGame()
-@property (strong, nonatomic) NSMutableArray *cards;
+
 @property (nonatomic) int score;
 @property (nonatomic) NSString *myResultOfLastFlip;
 
@@ -18,6 +18,8 @@
 @end
 
 @implementation CardMatchingGame
+
+@synthesize cards = _cards;
 
 - (NSString*) myResultOfLastFlip
 {
@@ -36,23 +38,7 @@
     return _cards;
 }
 
-- (id)initWithCardCount:(NSUInteger)cardCount usingDeck:(Deck *)deck
-{
-    self = [super init];
-    
-    if (self) {
-        for (int i = 0; i < cardCount; i++) {
-            Card *card = [deck drawRandomCard];
-            if (!card) {
-                self = nil;
-            } else {
-                self.cards[i] = card;
-            }
-        }
-    }
-    
-    return self;
-}
+
 
 #define MATCH_BONUS 4
 #define MISMATCH_PENALTY 2
@@ -166,10 +152,7 @@
     
 }
 
-- (Card *)cardAtIndex:(NSUInteger)index
-{
-    return (index < self.cards.count) ? self.cards[index] : nil;
-}
+
 
 - (bool)checkAvailableMove:(Card *)card
 {

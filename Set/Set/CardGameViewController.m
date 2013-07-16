@@ -11,6 +11,7 @@
 #import "CardMatchingGame.h"
 
 @interface CardGameViewController () 
+
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *resultOfLastFlip;
@@ -35,6 +36,7 @@
 
 - (CardMatchingGame *)game
 {
+    NSLog(@"cardbuttons count %d", self.cardButtons.count);
     if (!_game) _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count usingDeck:[[PlayingCardDeck alloc] init]];
     return _game;
 }
@@ -53,6 +55,7 @@
 {
     for (UIButton *cardButton in self.cardButtons){
         Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
+        NSLog(@"%d %@ %@",card.isFaceUp, card.contents,card.attribtedContents);
         [cardButton setTitle:card.contents forState:UIControlStateSelected];
         [cardButton setTitle:card.contents forState:UIControlStateSelected|UIControlStateDisabled];
         cardButton.selected = card.isFaceUp;

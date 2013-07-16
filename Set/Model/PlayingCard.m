@@ -33,6 +33,11 @@
     return [rankStrings[self.rank] stringByAppendingString: self.suit];
 }
 
+- (NSAttributedString *)attribtedContents
+{
+    return [[NSAttributedString alloc] initWithString:@"test"];
+}
+
 @synthesize suit = _suit;
 
 + (NSArray *)validSuits
