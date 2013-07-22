@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="XL2-8i-w1H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cWi-Zl-75Q">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -424,53 +424,33 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNe-20-DIW">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aks-Us-B1J">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="N45-lq-MED"/>
+                                    <constraint firstAttribute="width" constant="87" id="bQf-QH-pwd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYR-Ui-SXG">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aks-Us-B1J">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Vk5-6p-TxF"/>
-                                    <constraint firstAttribute="width" constant="64" id="ua1-qf-cef"/>
+                                    <constraint firstAttribute="width" constant="96" id="piT-h0-wMG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="oen-vh-IA3"/>
-                                </connections>
-                            </button>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isM-N4-aIi">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="63" id="Ug5-eQ-S0x"/>
+                                    <constraint firstAttribute="width" constant="63" id="GSu-PK-XjS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="cFj-aW-2EU"/>
@@ -480,16 +460,14 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="PPa-6z-12T"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="8AF-vl-OkZ"/>
@@ -499,16 +477,14 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="E95-PW-USD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="XIx-74-gwf"/>
@@ -516,18 +492,16 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iy9-SK-B6C">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Uhr-tJ-9tN"/>
+                                    <constraint firstAttribute="height" constant="18" id="hPW-fc-dDE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="0a8-G0-Z5h"/>
@@ -535,378 +509,437 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Pu-3h-AXi">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="zKI-ww-gC0"/>
+                                    <constraint firstAttribute="width" constant="73" id="z6g-Qg-gTo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="rkC-Mf-hrW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MIz-Ji-4OQ">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="3kS-pU-Zkz"/>
+                                    <constraint firstAttribute="width" constant="73" id="52G-bT-Ndy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="8J2-Hj-78l"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zh4-Yn-AhX">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="r7p-fV-tBh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yY5-3B-eIa">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="IRn-Qe-G5P"/>
+                                    <constraint firstAttribute="height" constant="18" id="tfd-yl-YX2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="4xg-uo-ldb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0Y-h5-GLv">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="Yz8-yT-a4e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwx-kC-red">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="5EK-ML-uWT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pyz-fW-PWP">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="VJX-wU-1qi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="fai-M5-EuM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N8p-qB-4dt">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="lu8-TE-Do6"/>
+                                    <constraint firstAttribute="width" constant="73" id="fiP-PH-e3F"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="ufB-rn-tWN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iap-vN-tjc">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="HrH-y9-qiv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4c-wm-UWh">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="FyJ-5x-oYP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZ6-1N-7RF">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="ABg-xG-tpM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dY2-Tc-OgK">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="fHa-Ro-Klk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="kF6-yg-FjB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qsY-hv-JrO">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="gvY-6f-SCp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mc-N9-dnz">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="fJj-fl-70z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UPO-Ml-WEb">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="X4v-J5-2iW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qge-2f-8rV">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="wuC-DH-uGW"/>
+                                    <constraint firstAttribute="width" constant="73" id="LWr-Xg-9Mq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="UgF-cA-TN2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QfQ-Ga-Dad">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="HFI-lV-nf8"/>
+                                    <constraint firstAttribute="width" constant="73" id="kcY-HE-egH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="A5z-WU-TCR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q8H-bw-fQ6">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="cOq-aX-Y0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="s4A-IK-VGC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZX-18-usy">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="98w-xC-php"/>
+                                    <constraint firstAttribute="width" constant="64" id="FtR-P5-z2k"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="Fru-wM-I5s"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Match Results Here." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaA-NN-Fbz">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaA-NN-Fbz">
+                                <attributedString key="attributedText">
+                                    <fragment content="Match Results Here.">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nk6-pA-bLI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="2jn-G7-83Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flip:" destination="XL2-8i-w1H" eventType="touchUpInside" id="Aet-ai-bTo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAL-vF-eDM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="vn3-4L-go2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dealGame" destination="XL2-8i-w1H" eventType="touchUpInside" id="Uh9-XV-faZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Aa-An-X3r">
+                                <attributedString key="attributedText">
+                                    <fragment content="Please click one card.">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iap-vN-tjc" firstAttribute="leading" secondItem="dY2-Tc-OgK" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="0BU-ig-rcW"/>
-                            <constraint firstItem="4Mc-N9-dnz" firstAttribute="top" secondItem="qsY-hv-JrO" secondAttribute="top" type="default" id="0sK-PM-UPJ"/>
-                            <constraint firstItem="eZX-18-usy" firstAttribute="leading" secondItem="Q8H-bw-fQ6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="1cR-iy-hbA"/>
-                            <constraint firstItem="iap-vN-tjc" firstAttribute="leading" secondItem="N8p-qB-4dt" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="20k-Pu-q20"/>
-                            <constraint firstItem="4Mc-N9-dnz" firstAttribute="top" secondItem="w4c-wm-UWh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2Lv-EN-1Dl"/>
-                            <constraint firstItem="Iwx-kC-red" firstAttribute="top" secondItem="MIz-Ji-4OQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3IZ-wC-xxt"/>
-                            <constraint firstItem="w4c-wm-UWh" firstAttribute="leading" secondItem="Iwx-kC-red" secondAttribute="leading" type="default" id="3R5-pp-IQa"/>
-                            <constraint firstItem="GZ6-1N-7RF" firstAttribute="leading" secondItem="4Mc-N9-dnz" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="3j1-ab-0US"/>
-                            <constraint firstItem="SYR-Ui-SXG" firstAttribute="leading" secondItem="iy9-SK-B6C" secondAttribute="leading" type="default" id="40u-m2-J7K"/>
-                            <constraint firstItem="Iwx-kC-red" firstAttribute="top" secondItem="H0Y-h5-GLv" secondAttribute="top" type="default" id="5kI-0R-Ebv"/>
-                            <constraint firstItem="MIz-Ji-4OQ" firstAttribute="top" secondItem="7Pu-3h-AXi" secondAttribute="top" type="default" id="5p5-cZ-vVa"/>
-                            <constraint firstItem="w4c-wm-UWh" firstAttribute="leading" secondItem="iap-vN-tjc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="5vS-vh-pUp"/>
-                            <constraint firstItem="iy9-SK-B6C" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="74" id="6Rb-R9-rOG"/>
-                            <constraint firstItem="yY5-3B-eIa" firstAttribute="top" secondItem="iy9-SK-B6C" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="7hA-K2-GM5"/>
-                            <constraint firstItem="N8p-qB-4dt" firstAttribute="leading" secondItem="yY5-3B-eIa" secondAttribute="leading" type="default" id="9Y4-fV-rUT"/>
-                            <constraint firstItem="eZX-18-usy" firstAttribute="top" secondItem="UPO-Ml-WEb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="AH0-0M-0i3"/>
-                            <constraint firstItem="7Pu-3h-AXi" firstAttribute="top" secondItem="iy9-SK-B6C" secondAttribute="top" type="default" id="Ame-Sa-uvN"/>
-                            <constraint firstAttribute="bottom" secondItem="QfQ-Ga-Dad" secondAttribute="bottom" constant="83" id="D5S-Um-XJ1"/>
-                            <constraint firstItem="7Pu-3h-AXi" firstAttribute="leading" secondItem="yY5-3B-eIa" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="FTf-w6-IOo"/>
-                            <constraint firstItem="Q8H-bw-fQ6" firstAttribute="bottom" secondItem="qge-2f-8rV" secondAttribute="bottom" type="default" id="Fzm-nc-dnv"/>
-                            <constraint firstAttribute="bottom" secondItem="qge-2f-8rV" secondAttribute="bottom" constant="84" id="GjU-Pf-qbz"/>
-                            <constraint firstItem="GZ6-1N-7RF" firstAttribute="leading" secondItem="w4c-wm-UWh" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="HBp-Cg-L5t"/>
-                            <constraint firstItem="4Mc-N9-dnz" firstAttribute="leading" secondItem="qsY-hv-JrO" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="HsX-YN-zHb"/>
-                            <constraint firstItem="Pyz-fW-PWP" firstAttribute="leading" secondItem="MIz-Ji-4OQ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="HsZ-VE-A0V"/>
+                            <constraint firstAttribute="trailing" secondItem="UPO-Ml-WEb" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0RJ-7y-rBy"/>
+                            <constraint firstAttribute="trailing" secondItem="MIz-Ji-4OQ" secondAttribute="trailing" constant="87" id="0jM-6m-tZU"/>
+                            <constraint firstItem="7Pu-3h-AXi" firstAttribute="top" secondItem="iy9-SK-B6C" secondAttribute="top" type="default" id="1pO-Jx-yDI"/>
+                            <constraint firstItem="Iwx-kC-red" firstAttribute="top" secondItem="H0Y-h5-GLv" secondAttribute="top" type="default" id="57a-pQ-RJK"/>
+                            <constraint firstItem="N8p-qB-4dt" firstAttribute="trailing" secondItem="dY2-Tc-OgK" secondAttribute="trailing" type="default" id="6Fs-tT-Xk3"/>
+                            <constraint firstAttribute="trailing" secondItem="Pyz-fW-PWP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7Um-yc-Om5"/>
+                            <constraint firstItem="7Pu-3h-AXi" firstAttribute="top" secondItem="MIz-Ji-4OQ" secondAttribute="top" type="default" id="7Yr-bV-Gox"/>
+                            <constraint firstItem="4Mc-N9-dnz" firstAttribute="trailing" secondItem="w4c-wm-UWh" secondAttribute="trailing" type="default" id="8mB-qT-hjA"/>
+                            <constraint firstItem="MIz-Ji-4OQ" firstAttribute="centerX" secondItem="XOa-lU-ggl" secondAttribute="centerX" type="default" id="ARd-0e-l6e"/>
+                            <constraint firstItem="iap-vN-tjc" firstAttribute="leading" secondItem="H0Y-h5-GLv" secondAttribute="leading" type="default" id="BK1-Tw-WcB"/>
+                            <constraint firstAttribute="trailing" secondItem="BV5-7W-FKE" secondAttribute="trailing" constant="21" id="DkD-sT-BAJ"/>
+                            <constraint firstItem="MIz-Ji-4OQ" firstAttribute="top" secondItem="zh4-Yn-AhX" secondAttribute="top" type="default" id="EH8-Ar-51S"/>
+                            <constraint firstItem="Nk6-pA-bLI" firstAttribute="bottom" secondItem="isM-N4-aIi" secondAttribute="bottom" type="default" id="Efl-RV-0kX"/>
+                            <constraint firstItem="Nk6-pA-bLI" firstAttribute="trailing" secondItem="iy9-SK-B6C" secondAttribute="trailing" type="default" id="F8D-0U-99F"/>
+                            <constraint firstItem="4Mc-N9-dnz" firstAttribute="top" secondItem="qsY-hv-JrO" secondAttribute="top" type="default" id="FFq-em-Uq3"/>
+                            <constraint firstItem="QfQ-Ga-Dad" firstAttribute="leading" secondItem="wGI-hu-3q0" secondAttribute="leading" constant="78" id="FsI-ei-Jew"/>
+                            <constraint firstItem="qge-2f-8rV" firstAttribute="top" secondItem="dY2-Tc-OgK" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Gye-V1-0aP"/>
+                            <constraint firstAttribute="trailing" secondItem="GZ6-1N-7RF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HUG-BF-ey1"/>
+                            <constraint firstItem="iy9-SK-B6C" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="64" id="I3V-Dk-t08"/>
                             <constraint firstItem="GZ6-1N-7RF" firstAttribute="leading" secondItem="Pyz-fW-PWP" secondAttribute="leading" type="default" id="I80-0V-1Jv"/>
-                            <constraint firstItem="UPO-Ml-WEb" firstAttribute="top" secondItem="4Mc-N9-dnz" secondAttribute="top" type="default" id="IBK-Sz-vhx"/>
-                            <constraint firstItem="Pyz-fW-PWP" firstAttribute="top" secondItem="zh4-Yn-AhX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="J5c-Gk-RFG"/>
-                            <constraint firstItem="QfQ-Ga-Dad" firstAttribute="leading" secondItem="qge-2f-8rV" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Jvz-2E-Y5P"/>
-                            <constraint firstItem="qge-2f-8rV" firstAttribute="leading" secondItem="dY2-Tc-OgK" secondAttribute="leading" type="default" id="KBF-Sk-74v"/>
-                            <constraint firstItem="iap-vN-tjc" firstAttribute="top" secondItem="w4c-wm-UWh" secondAttribute="top" type="default" id="KrI-Kt-adA"/>
-                            <constraint firstAttribute="trailing" secondItem="BV5-7W-FKE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="LJO-fm-FID"/>
-                            <constraint firstAttribute="trailing" secondItem="zh4-Yn-AhX" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="LTL-O1-ldq"/>
-                            <constraint firstItem="H0Y-h5-GLv" firstAttribute="top" secondItem="7Pu-3h-AXi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="M2P-UP-uOq"/>
+                            <constraint firstItem="GZ6-1N-7RF" firstAttribute="leading" secondItem="UPO-Ml-WEb" secondAttribute="leading" type="default" id="JOG-le-9Mr"/>
+                            <constraint firstItem="Iwx-kC-red" firstAttribute="leading" secondItem="MIz-Ji-4OQ" secondAttribute="leading" type="default" id="Mc0-eH-OSv"/>
+                            <constraint firstItem="qge-2f-8rV" firstAttribute="leading" secondItem="wGI-hu-3q0" secondAttribute="leading" constant="26" id="MoW-xx-WT6"/>
+                            <constraint firstItem="BV5-7W-FKE" firstAttribute="trailing" secondItem="zh4-Yn-AhX" secondAttribute="trailing" type="default" id="Mzv-rD-gxI"/>
+                            <constraint firstItem="yY5-3B-eIa" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="101" id="N4y-kF-V9F"/>
+                            <constraint firstItem="iap-vN-tjc" firstAttribute="trailing" secondItem="qsY-hv-JrO" secondAttribute="trailing" type="default" id="NG7-tJ-1oX"/>
+                            <constraint firstAttribute="trailing" secondItem="Q8H-bw-fQ6" secondAttribute="trailing" constant="81" id="NJn-lf-QzH"/>
+                            <constraint firstItem="iap-vN-tjc" firstAttribute="top" secondItem="GZ6-1N-7RF" secondAttribute="top" type="default" id="NNE-J9-Hos"/>
+                            <constraint firstItem="isM-N4-aIi" firstAttribute="leading" secondItem="Nk6-pA-bLI" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="NOp-Ik-2Nz"/>
                             <constraint firstItem="XOa-lU-ggl" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="20" symbolic="YES" type="default" id="NaU-3g-Vup"/>
-                            <constraint firstItem="isM-N4-aIi" firstAttribute="leading" secondItem="SYR-Ui-SXG" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="NpX-wO-Tap"/>
-                            <constraint firstItem="Q8H-bw-fQ6" firstAttribute="leading" secondItem="QfQ-Ga-Dad" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="OPA-IM-2qR"/>
+                            <constraint firstItem="WAL-vF-eDM" firstAttribute="top" secondItem="JaA-NN-Fbz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="NqG-ag-h0K"/>
                             <constraint firstAttribute="bottom" secondItem="aNe-20-DIW" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="OQV-ka-gbI"/>
-                            <constraint firstItem="UPO-Ml-WEb" firstAttribute="leading" secondItem="Q8H-bw-fQ6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="RI1-io-mqS"/>
-                            <constraint firstItem="MIz-Ji-4OQ" firstAttribute="leading" secondItem="7Pu-3h-AXi" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="RuL-T2-L0h"/>
+                            <constraint firstItem="Iwx-kC-red" firstAttribute="top" secondItem="Pyz-fW-PWP" secondAttribute="top" type="default" id="QE6-o5-Ao9"/>
                             <constraint firstAttribute="bottom" secondItem="aks-Us-B1J" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Sj1-9x-Uyc"/>
-                            <constraint firstItem="GZ6-1N-7RF" firstAttribute="trailing" secondItem="UPO-Ml-WEb" secondAttribute="trailing" type="default" id="Ui5-iU-VeM"/>
-                            <constraint firstItem="JaA-NN-Fbz" firstAttribute="centerX" secondItem="wGI-hu-3q0" secondAttribute="centerX" type="default" id="XOi-Mx-zoj"/>
-                            <constraint firstItem="isM-N4-aIi" firstAttribute="leading" secondItem="7Pu-3h-AXi" secondAttribute="leading" type="default" id="ZZH-E8-tb6"/>
-                            <constraint firstItem="XOa-lU-ggl" firstAttribute="bottom" secondItem="isM-N4-aIi" secondAttribute="bottom" type="default" id="ZsL-t1-3g3"/>
-                            <constraint firstItem="SYR-Ui-SXG" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="20" symbolic="YES" type="default" id="aT6-IS-oq5"/>
-                            <constraint firstItem="iap-vN-tjc" firstAttribute="top" secondItem="H0Y-h5-GLv" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ay5-bz-RrE"/>
+                            <constraint firstItem="Q8H-bw-fQ6" firstAttribute="top" secondItem="4Mc-N9-dnz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UM9-St-LJH"/>
+                            <constraint firstItem="N8p-qB-4dt" firstAttribute="leading" secondItem="wGI-hu-3q0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Voi-U5-qj6"/>
+                            <constraint firstItem="7Pu-3h-AXi" firstAttribute="trailing" secondItem="H0Y-h5-GLv" secondAttribute="trailing" type="default" id="WAi-Z3-odZ"/>
+                            <constraint firstItem="Q8H-bw-fQ6" firstAttribute="top" secondItem="UPO-Ml-WEb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XCF-hD-yHx"/>
+                            <constraint firstItem="H0Y-h5-GLv" firstAttribute="leading" secondItem="7Pu-3h-AXi" secondAttribute="leading" type="default" id="Ycc-9o-jsn"/>
+                            <constraint firstItem="iy9-SK-B6C" firstAttribute="trailing" secondItem="yY5-3B-eIa" secondAttribute="trailing" type="default" id="ZAG-R4-g5n"/>
+                            <constraint firstItem="N8p-qB-4dt" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="146" id="ZRk-Fy-pNa"/>
+                            <constraint firstItem="JaA-NN-Fbz" firstAttribute="centerX" secondItem="wGI-hu-3q0" secondAttribute="centerX" type="default" id="b4m-W2-AXP"/>
                             <constraint firstItem="zh4-Yn-AhX" firstAttribute="leading" secondItem="BV5-7W-FKE" secondAttribute="leading" type="default" id="bBJ-cl-rEW"/>
-                            <constraint firstItem="H0Y-h5-GLv" firstAttribute="leading" secondItem="yY5-3B-eIa" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cGL-Xu-yJx"/>
-                            <constraint firstItem="qsY-hv-JrO" firstAttribute="top" secondItem="iap-vN-tjc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cYW-Vc-18I"/>
-                            <constraint firstItem="qsY-hv-JrO" firstAttribute="top" secondItem="dY2-Tc-OgK" secondAttribute="top" type="default" id="cgI-zS-PB5"/>
-                            <constraint firstItem="Iwx-kC-red" firstAttribute="leading" secondItem="H0Y-h5-GLv" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cqa-1p-D99"/>
-                            <constraint firstItem="UPO-Ml-WEb" firstAttribute="trailing" secondItem="eZX-18-usy" secondAttribute="trailing" type="default" id="dj5-2J-zeP"/>
+                            <constraint firstItem="w4c-wm-UWh" firstAttribute="leading" secondItem="4Mc-N9-dnz" secondAttribute="leading" type="default" id="bDs-2s-ySu"/>
+                            <constraint firstItem="dY2-Tc-OgK" firstAttribute="leading" secondItem="wGI-hu-3q0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="bGc-j9-Nan"/>
+                            <constraint firstItem="isM-N4-aIi" firstAttribute="leading" secondItem="8Aa-An-X3r" secondAttribute="leading" priority="188" type="user" id="d5o-6q-cxZ"/>
+                            <constraint firstItem="w4c-wm-UWh" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="147" id="d73-Xn-svI"/>
+                            <constraint firstItem="MIz-Ji-4OQ" firstAttribute="trailing" secondItem="Iwx-kC-red" secondAttribute="trailing" type="default" id="dby-n1-h5w"/>
                             <constraint firstAttribute="trailing" secondItem="aks-Us-B1J" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="e7d-Wz-hgh"/>
-                            <constraint firstItem="qsY-hv-JrO" firstAttribute="leading" secondItem="dY2-Tc-OgK" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="eMB-g1-0eO"/>
-                            <constraint firstItem="MIz-Ji-4OQ" firstAttribute="leading" secondItem="H0Y-h5-GLv" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="fzJ-ci-6Ds"/>
+                            <constraint firstItem="yY5-3B-eIa" firstAttribute="top" secondItem="H0Y-h5-GLv" secondAttribute="top" type="default" id="eVO-sa-rO1"/>
+                            <constraint firstItem="w4c-wm-UWh" firstAttribute="leading" secondItem="Iwx-kC-red" secondAttribute="leading" type="default" id="ecH-uH-f7v"/>
                             <constraint firstItem="BV5-7W-FKE" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="20" symbolic="YES" type="default" id="g1V-9N-YMX"/>
                             <constraint firstItem="isM-N4-aIi" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="20" symbolic="YES" type="default" id="hsw-Op-SyV"/>
-                            <constraint firstItem="4Mc-N9-dnz" firstAttribute="leading" secondItem="QfQ-Ga-Dad" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="i9R-a8-D7V"/>
-                            <constraint firstItem="H0Y-h5-GLv" firstAttribute="top" secondItem="yY5-3B-eIa" secondAttribute="top" type="default" id="iLg-f9-fdt"/>
-                            <constraint firstItem="XOa-lU-ggl" firstAttribute="leading" secondItem="isM-N4-aIi" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="if4-c2-MS2"/>
-                            <constraint firstItem="SYR-Ui-SXG" firstAttribute="bottom" secondItem="isM-N4-aIi" secondAttribute="bottom" type="default" id="iiK-vt-cg2"/>
-                            <constraint firstItem="qsY-hv-JrO" firstAttribute="bottom" secondItem="dY2-Tc-OgK" secondAttribute="bottom" type="default" id="ikc-dd-Z0b"/>
-                            <constraint firstItem="iap-vN-tjc" firstAttribute="leading" secondItem="H0Y-h5-GLv" secondAttribute="leading" type="default" id="io8-ci-GDh"/>
-                            <constraint firstItem="iap-vN-tjc" firstAttribute="top" secondItem="N8p-qB-4dt" secondAttribute="top" type="default" id="iuo-IN-KUd"/>
-                            <constraint firstItem="N8p-qB-4dt" firstAttribute="top" secondItem="yY5-3B-eIa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="iv3-tq-VPA"/>
-                            <constraint firstItem="dY2-Tc-OgK" firstAttribute="leading" secondItem="N8p-qB-4dt" secondAttribute="leading" type="default" id="jU8-4D-Clv"/>
-                            <constraint firstItem="MIz-Ji-4OQ" firstAttribute="top" secondItem="zh4-Yn-AhX" secondAttribute="top" type="default" id="jqw-Ej-NlC"/>
-                            <constraint firstItem="4Mc-N9-dnz" firstAttribute="bottom" secondItem="qsY-hv-JrO" secondAttribute="bottom" type="default" id="lDb-ve-724"/>
-                            <constraint firstItem="GZ6-1N-7RF" firstAttribute="top" secondItem="Pyz-fW-PWP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="m1h-la-4hy"/>
-                            <constraint firstItem="qsY-hv-JrO" firstAttribute="leading" secondItem="qge-2f-8rV" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="mgD-6b-hrn"/>
-                            <constraint firstItem="w4c-wm-UWh" firstAttribute="top" secondItem="GZ6-1N-7RF" secondAttribute="top" type="default" id="omD-Ry-sys"/>
-                            <constraint firstItem="qge-2f-8rV" firstAttribute="top" secondItem="Q8H-bw-fQ6" secondAttribute="top" type="default" id="pGb-Zg-SYO"/>
-                            <constraint firstItem="UPO-Ml-WEb" firstAttribute="top" secondItem="GZ6-1N-7RF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pVM-US-iK4"/>
+                            <constraint firstItem="dY2-Tc-OgK" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="189" id="jTI-71-iY5"/>
+                            <constraint firstItem="qge-2f-8rV" firstAttribute="top" secondItem="qsY-hv-JrO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jVg-Cb-byh"/>
+                            <constraint firstItem="iy9-SK-B6C" firstAttribute="leading" secondItem="wGI-hu-3q0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lUb-5Y-g4q"/>
+                            <constraint firstItem="Iwx-kC-red" firstAttribute="trailing" secondItem="w4c-wm-UWh" secondAttribute="trailing" type="default" id="mSt-iZ-Fjn"/>
+                            <constraint firstItem="yY5-3B-eIa" firstAttribute="leading" secondItem="wGI-hu-3q0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oCG-gy-z8n"/>
+                            <constraint firstItem="8Aa-An-X3r" firstAttribute="centerX" secondItem="JaA-NN-Fbz" secondAttribute="centerX" type="default" id="oDC-w5-r1E"/>
+                            <constraint firstItem="qsY-hv-JrO" firstAttribute="leading" secondItem="iap-vN-tjc" secondAttribute="leading" type="default" id="oXF-oc-oUA"/>
+                            <constraint firstItem="WAL-vF-eDM" firstAttribute="centerY" secondItem="aks-Us-B1J" secondAttribute="centerY" type="default" id="p4K-oK-y43"/>
+                            <constraint firstItem="Nk6-pA-bLI" firstAttribute="leading" secondItem="wGI-hu-3q0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="p6G-7M-bmh"/>
                             <constraint firstItem="aNe-20-DIW" firstAttribute="leading" secondItem="wGI-hu-3q0" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qBI-lH-dKO"/>
-                            <constraint firstItem="w4c-wm-UWh" firstAttribute="leading" secondItem="qsY-hv-JrO" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="qpe-Pc-dBQ"/>
-                            <constraint firstAttribute="bottom" secondItem="JaA-NN-Fbz" secondAttribute="bottom" constant="56" id="rbb-P4-NBL"/>
-                            <constraint firstItem="4Mc-N9-dnz" firstAttribute="bottom" secondItem="UPO-Ml-WEb" secondAttribute="bottom" type="default" id="s5P-7f-lT8"/>
-                            <constraint firstItem="w4c-wm-UWh" firstAttribute="top" secondItem="Iwx-kC-red" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="sSg-h1-AKH"/>
-                            <constraint firstItem="BV5-7W-FKE" firstAttribute="bottom" secondItem="XOa-lU-ggl" secondAttribute="bottom" type="default" id="tfU-3u-Ieo"/>
-                            <constraint firstItem="UPO-Ml-WEb" firstAttribute="leading" secondItem="4Mc-N9-dnz" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="u2g-eu-5of"/>
-                            <constraint firstItem="dY2-Tc-OgK" firstAttribute="top" secondItem="N8p-qB-4dt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uSQ-x6-7M9"/>
-                            <constraint firstItem="7Pu-3h-AXi" firstAttribute="leading" secondItem="iy9-SK-B6C" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="wCF-1y-5io"/>
-                            <constraint firstItem="Iwx-kC-red" firstAttribute="top" secondItem="Pyz-fW-PWP" secondAttribute="top" type="default" id="wnt-rF-ZrO"/>
-                            <constraint firstItem="iy9-SK-B6C" firstAttribute="leading" secondItem="yY5-3B-eIa" secondAttribute="leading" type="default" id="xVR-3u-HJA"/>
-                            <constraint firstItem="BV5-7W-FKE" firstAttribute="leading" secondItem="XOa-lU-ggl" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="xil-bU-Igd"/>
-                            <constraint firstItem="Pyz-fW-PWP" firstAttribute="leading" secondItem="Iwx-kC-red" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="xsZ-m8-jbR"/>
-                            <constraint firstItem="GZ6-1N-7RF" firstAttribute="trailing" secondItem="Pyz-fW-PWP" secondAttribute="trailing" type="default" id="xvp-zl-SXL"/>
+                            <constraint firstItem="QfQ-Ga-Dad" firstAttribute="top" secondItem="qsY-hv-JrO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qpz-Xn-AVj"/>
+                            <constraint firstItem="H0Y-h5-GLv" firstAttribute="trailing" secondItem="iap-vN-tjc" secondAttribute="trailing" type="default" id="sBr-bf-ujN"/>
+                            <constraint firstItem="Nk6-pA-bLI" firstAttribute="top" secondItem="wGI-hu-3q0" secondAttribute="top" constant="20" symbolic="YES" type="default" id="t8b-Gm-b44"/>
+                            <constraint firstItem="eZX-18-usy" firstAttribute="top" secondItem="UPO-Ml-WEb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tEI-rw-ezz"/>
+                            <constraint firstItem="JaA-NN-Fbz" firstAttribute="centerX" secondItem="WAL-vF-eDM" secondAttribute="centerX" type="default" id="ufC-nX-oun"/>
+                            <constraint firstItem="7Pu-3h-AXi" firstAttribute="centerX" secondItem="isM-N4-aIi" secondAttribute="centerX" type="default" id="v87-hb-R69"/>
+                            <constraint firstAttribute="trailing" secondItem="eZX-18-usy" secondAttribute="trailing" constant="14" id="wvo-h6-aZi"/>
+                            <constraint firstItem="iap-vN-tjc" firstAttribute="top" secondItem="N8p-qB-4dt" secondAttribute="top" type="default" id="yoD-d2-dhe"/>
+                            <constraint firstItem="JaA-NN-Fbz" firstAttribute="top" secondItem="8Aa-An-X3r" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zNg-8B-XqY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="10" title="Set" image="🃏" id="dpq-GD-Ze9"/>
+                    <tabBarItem key="tabBarItem" tag="10" title="Set" id="dpq-GD-Ze9"/>
                     <connections>
-                        <outletCollection property="cardButtons" destination="SYR-Ui-SXG" id="R2U-6Y-YLh"/>
+                        <outlet property="flipsLabel" destination="aNe-20-DIW" id="vX3-cb-N3h"/>
+                        <outlet property="gameProcessLabel" destination="8Aa-An-X3r" id="8ND-Yn-pHN"/>
+                        <outlet property="matchResultLabel" destination="JaA-NN-Fbz" id="trK-8f-4z3"/>
+                        <outlet property="scoreLabel" destination="aks-Us-B1J" id="sro-MU-hrP"/>
                         <outletCollection property="cardButtons" destination="isM-N4-aIi" id="eTi-CB-NMb"/>
                         <outletCollection property="cardButtons" destination="XOa-lU-ggl" id="ySy-s5-oIj"/>
                         <outletCollection property="cardButtons" destination="BV5-7W-FKE" id="Bu4-Y9-AnE"/>
@@ -930,6 +963,7 @@
                         <outletCollection property="cardButtons" destination="dY2-Tc-OgK" id="Y7o-sB-elz"/>
                         <outletCollection property="cardButtons" destination="qge-2f-8rV" id="Wcb-rv-ETd"/>
                         <outletCollection property="cardButtons" destination="QfQ-Ga-Dad" id="4Mb-Q9-arw"/>
+                        <outletCollection property="cardButtons" destination="Nk6-pA-bLI" id="ouH-JC-xF8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZT-fM-ql7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -958,15 +992,11 @@
     </scenes>
     <resources>
         <image name="1.png" width="97" height="87"/>
-        <image name="🃏" width="16" height="16"/>
     </resources>
     <classes>
         <class className="CardGameViewController" superclassName="GameViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardGameViewController.h"/>
             <relationships>
-                <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
-                <relationship kind="action" name="performGameSwitch:" candidateClass="UISegmentedControl"/>
-                <relationship kind="action" name="restartGame:"/>
                 <relationship kind="outlet" name="flipsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="resultOfLastFlip" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
@@ -983,7 +1013,10 @@
         <class className="SetGameViewController" superclassName="GameViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SetGameViewController.h"/>
             <relationships>
-                <relationship kind="action" name="flip:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="flipsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="gameProcessLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="matchResultLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
             </relationships>
         </class>

@@ -13,13 +13,14 @@
 //@property (strong, nonatomic) NSAttributedString *attribtedContents;
 
 @property (strong, nonatomic) NSString *symbol;
-@property (strong, nonatomic) NSString *shading;
-@property (strong, nonatomic) NSString *color;
+//@property (strong, nonatomic) NSString *shading;
+@property (strong, nonatomic) UIColor *color;
+
 @property (nonatomic) NSUInteger number;
 
 + (NSArray *)validSymbol;
-+ (NSArray *)validShading;
-+ (NSArray *)validColor;
+//+ (NSArray *)validShading;
++ (NSMutableArray *)validColor;
 + (NSUInteger)maxNumber;
 
 @end

@@ -11,7 +11,13 @@
 
 @interface SetMatchingGame : MatchingGame
 
-//- (id)initWithCardCount:(NSUInteger)cardCount usingDeck:(Deck *)deck;
-//- (PlayingSet *)cardAtIndex:(NSUInteger)index;
+- (void)flipSetAtIndex:(NSUInteger)index;
+
+- (void)restartGame;
+
+@property (nonatomic, readonly) int score;
+
+@property (strong, nonatomic) NSMutableAttributedString *resultOfLastFlip;
+@property (strong, nonatomic) NSMutableAttributedString *gameProcess;
 
 @end

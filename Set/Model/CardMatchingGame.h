@@ -11,8 +11,6 @@
 
 @interface CardMatchingGame : MatchingGame
 
-
-
 - (void)flipCardAtIndex:(NSUInteger)index chooseMode:(NSUInteger)mode;
 
 - (NSString*)updateResultOfLastFlip;

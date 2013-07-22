@@ -11,7 +11,7 @@
 @interface Card : NSObject
 
 @property (strong, nonatomic) NSString * contents;
-@property (strong, nonatomic) NSAttributedString *attribtedContents;
+@property (strong, nonatomic) NSMutableAttributedString *attribtedContents;
 
 
 @property (nonatomic, getter=isFaceUp) BOOL faceUp;

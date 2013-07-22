@@ -111,7 +111,7 @@
     i = [self.myArray indexOfObject:[self.myArray lastObject]];
     
     if(i == 2){
-        NSLog(@"third card");
+        //NSLog(@"third card");
         int firstIndex = [self.myArray[0] integerValue];
         int secondIndex = [self.myArray[1] integerValue];
         int thirdIndex = [self.myArray[2] integerValue];

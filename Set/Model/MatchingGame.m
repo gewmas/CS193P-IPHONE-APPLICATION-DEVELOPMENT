@@ -23,7 +23,7 @@
             if (!card) {
                 self = nil;
             } else {
-                NSLog(@"%d %@ %@",card.isFaceUp, card.contents, card.attribtedContents);
+                //NSLog(@"%d %@ %@",card.isFaceUp, card.contents, card.attribtedContents);
                 self.cards[i] = card;
             }
         }

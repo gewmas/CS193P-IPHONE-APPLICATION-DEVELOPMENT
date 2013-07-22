@@ -15,23 +15,28 @@
 {
     self = [super init];
     
-    if (self) {
-        for (NSString *symbol in [PlayingSet validSymbol]){
-            for (NSString *shading in [PlayingSet validShading]){
-                for (NSString *color in [PlayingSet validColor]) {
-                    for (NSUInteger number = 1; number <= [PlayingSet maxNumber]; number++){
-                        PlayingSet *set = [[PlayingSet alloc] init];
-                        set.symbol = symbol;
-                        set.shading = shading;
-                        set.color = color;
-                        set.number = number;
-                        [self addCard:set atTop:YES];
-//                        NSLog(@"%@ %@ %@ %d %@", set.symbol, set.shading, set.color, set.number, set.attribtedContents);
-                    }
+    if (self)
+    {
+        for (NSString *symbol in [PlayingSet validSymbol])
+        {
+           for (int colorIndex = 0; colorIndex < 3; colorIndex++)
+           {
+        
+                for (NSUInteger number = 1; number <= [PlayingSet maxNumber]; number++)
+                {
+                    PlayingSet *set = [[PlayingSet alloc] init];
+                    
+                    set.number = number;
+                    set.symbol = symbol;
+                    set.color = [PlayingSet validColor][colorIndex];
+                
+                                                            
+                    [self addCard:set atTop:YES];
                 }
             }
         }
     }
+     
     
     return self;
 }
